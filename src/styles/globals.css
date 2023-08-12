@@ -5,4 +5,17 @@
 body {
   padding: 0;
   margin: 0;
+  min-height: 100%;
+  min-height: 100vh;
+  font-family: 'Forum', cursive;
+}
+
+body::-webkit-scrollbar {
+  display: none;
+}
+
+.notion-app.dark-mode,
+.dark-mode .notion-header
+{
+  background: radial-gradient(ellipse at bottom, #1b2735 0%, #090a0f 80%);
 }

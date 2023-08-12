@@ -3,7 +3,7 @@ import { NotionAPI } from 'notion-client'
 import { NotionCompatAPI } from 'notion-compat'
 import { ExtendedRecordMap, SearchParams, SearchResults } from 'notion-types'
 
-import { previewImagesEnabled, useOfficialNotionAPI } from './config'
+import { previewImagesEnabled, useOfficialNotionAPI } from '../config'
 import { getPreviewImageMap } from './preview-images'
 
 const notion = useOfficialNotionAPI

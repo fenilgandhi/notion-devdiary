@@ -12,7 +12,7 @@ import {
   rootDomain,
   rootNotionPageId,
   rootNotionSpaceId
-} from '../lib/config'
+} from '../config'
 
 export const getStaticProps = async (context) => {
   const pageId = context.params.pageId as string

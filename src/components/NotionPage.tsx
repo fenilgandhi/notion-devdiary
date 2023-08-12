@@ -10,6 +10,12 @@ import { NotionRenderer } from 'react-notion-x'
 import TweetEmbed from 'react-tweet-embed'
 
 import { Loading } from './Loading'
+import {
+  enableDarkMode,
+  socialDescription,
+  socialImage,
+} from '../config'
+
 
 // -----------------------------------------------------------------------------
 // dynamic imports for optional components
@@ -112,10 +118,6 @@ export const NotionPage = ({
     g.block = block
   }
 
-  const socialDescription = 'React Notion X Demo'
-  const socialImage =
-    'https://react-notion-x-demo.transitivebullsh.it/social.jpg'
-
   return (
     <>
       <Head>
@@ -143,11 +145,11 @@ export const NotionPage = ({
         <meta name='twitter:creator' content='@transitive_bs' />
         <link rel='icon' href='/favicon.ico' />
       </Head>
-
+      
       <NotionRenderer
         recordMap={recordMap}
         fullPage={true}
-        darkMode={false}
+        darkMode={enableDarkMode}
         rootDomain={rootDomain}
         rootPageId={rootPageId}
         previewImages={previewImagesEnabled}

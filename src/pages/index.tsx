@@ -8,7 +8,7 @@ import {
   previewImagesEnabled,
   rootDomain,
   rootNotionPageId
-} from '../lib/config'
+} from '../config'
 
 export const getStaticProps = async () => {
   const pageId = rootNotionPageId
